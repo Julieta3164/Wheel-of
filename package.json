@@ -1,0 +1,16 @@
+{
+  "name": "wheel-balloons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildcss": "sass --watch src/sass:public/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.52.3",
+    "save-dev": "^0.0.1-security"
+  }
+}
