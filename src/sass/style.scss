@@ -1,4 +1,4 @@
-@import 'footer.scss';
+@import 'footer';
 body {
     font-family: 'Lobster', cursive;
     font-size: 25px;
@@ -12,18 +12,15 @@ body {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    
     span {
         font-size: 25px;
         margin-bottom: 1%;
     }
-
     input {
         border: solid 3px #358E9D;
         font-size: 20px;
         margin-bottom: 1%;
     }
-
     .btn {
         font-family: Arial;
         font-family: 'Lobster', cursive;
@@ -32,13 +29,13 @@ body {
         background: #358E9D;
         margin-bottom: 1%;
     }
-    .list{
+    .list {
         width: 50%;
         border: solid 3px #358E9D;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
-        margin-bottom: 1%;  
-        }
+        margin-bottom: 1%;
+    }
 }
