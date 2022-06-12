@@ -28,27 +28,27 @@
             </button>
             <ul class="nav-menu nav-menu_visible">
                 <li class="nav-menu-item">
-                    <a href="#" class="nav-menu-link nav-link">Lista</a>
+                    <a href="#" class="nav-menu-link nav-link" data-action="Lista(obj2)">Lista</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#" class="nav-menu-link nav-link">Añadir</a>
+                    <a href="#" class="nav-menu-link nav-link" data-action="Añadir(obj2)">Añadir</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#" class="nav-menu-link nav-link">Borrar</a>
+                    <a href="#" class="nav-menu-link nav-link" data-action="Borrar(obj2)">Borrar</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Modificar</a>
+                    <a href="#" class="nav-menu-link nav-link nav-menu-link_active" data-action="Modificar(obj2)">Modificar</a>
                 </li>
                 <a href="rules.html" class="btn-help">
                     <button class="help">
-                <div class="info">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-question-circle-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z" />
-                    </svg>
-                </div>
-                </button>
+                        <div class="info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z" />
+                            </svg>
+                        </div>
+                    </button>
                 </a>
             </ul>
         </nav>
@@ -60,10 +60,21 @@
                 <!--Seccion A-->
                 <div class="seccion-a">
                     <h2 class="title">Participantes</h2>
-                    <label class="name" for="Name"> <span>Añadir</span> </label>
+                    <label class="name" for="Name"> <span id="spamname">--</span> </label>
                     <input type="text">
-                    <button class="btn">Aceptar</button>
-                    <p><input class="list" type="text"></p>
+                    <button class="btn" id="btnAction">Aceptar</button>
+
+
+                    <ul class="list-group" id="list">
+                        <li class="list-group-item">
+
+                            <div class="col-xs-12 col-sm-9">
+                                <span class="name">Scott Stevens</span><br/>
+                                <!-- <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="7396 E North St"></span> -->
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="col">

@@ -1,7 +1,11 @@
+import { getLocalStorage, addLocalStore, createListFromLocalStorage } from "./common.js";
 import { showElected } from "./show-name.js";
 
+
 function app() {
-    let btnPlay = document.getElementById("play")
+    addLocalStore();
+    createListFromLocalStorage();
+    let btnPlay = document.getElementById("play");
     btnPlay.addEventListener('click', () => {
         showElected()
     })
