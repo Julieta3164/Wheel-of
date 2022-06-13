@@ -1,5 +1,9 @@
 .footer-sass {
   border: 3px solid #358E9D;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .show {
@@ -161,10 +165,10 @@ body {
 header {
   padding: 1%;
   background: #358E9D;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 header .title {
   display: flex;
@@ -278,12 +282,17 @@ main {
   display: flex;
   justify-content: space-around;
   flex-direction: row-reverse;
-  margin-right: 10%;
 }
-.but #play {
+.but .buttons {
   color: #fafafa;
+  width: 150%;
   background: #358E9D;
   border: solid 3px #358E9D;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .but .reset {
   margin-top: 1.5rem;
