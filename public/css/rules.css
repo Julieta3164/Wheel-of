@@ -1,12 +1,89 @@
-.container {
+body {
+  font-family: "Lobster", cursive;
+  margin: 5%;
+}
+
+header {
+  padding: 1%;
+  background: #358E9D;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+header .title {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.contenedor {
+  display: flex;
+  padding: 1%;
+}
+
+.instruciones {
+  width: 40%;
+  margin: 4%;
+  padding: 1%;
+  border: solid 3px #358E9D;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.instruciones .une {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recomendaciones {
+  width: 40%;
+  margin: 4%;
+  padding: 1%;
+  border: solid 3px #358E9D;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.recomendaciones .two {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.volver {
   text-align: center;
-  margin-left: 15em;
-  margin-right: 15em;
+  margin: 2%;
+}
+.volver .btns {
+  width: 15%;
+  color: #fafafa;
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+  background: #358E9D;
+  border: solid 3px #358E9D;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.footer-2 {
+  padding: 1%;
+  border: solid 3px #358E9D;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.footer-2 h2 {
+  text-align: center;
 }
 
 .globo {
-  max-width: 45px;
-  max-height: 45px;
+  max-width: 25px;
+  max-height: 25px;
   margin: 1.5em;
 }
 
