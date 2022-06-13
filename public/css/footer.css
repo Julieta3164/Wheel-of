@@ -1,5 +1,9 @@
 .footer-sass {
   border: 3px solid #358E9D;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 /*# sourceMappingURL=footer.css.map */
