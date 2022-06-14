@@ -1,0 +1,93 @@
+
+body {
+    font-family: 'Lobster', cursive;
+    margin: 5%;
+}
+
+header {
+    padding: 1%;
+    background: #358E9D;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    .title {
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+}
+
+.contenedor {
+    display: flex;
+    padding: 1%;
+}
+
+.instruciones {
+    width: 40%;
+    margin: 4%;
+    padding: 1%;
+    border: solid 3px #358E9D;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    .une {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.recomendaciones {
+    width: 40%;
+    margin: 4%;
+    padding: 1%;
+    border: solid 3px #358E9D;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    .two {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+.volver{
+text-align: center;
+margin: 2%;
+.btns{
+    width: 15% ;
+    color: #fafafa;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    background: #358E9D;
+    border: solid 3px #358E9D;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+}
+
+.footer-2 {
+    padding: 1%;
+    border: solid 3px #358E9D;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.globo {
+    max-width: 25px;
+    max-height: 25px;
+    margin: 1.5em;
+}
