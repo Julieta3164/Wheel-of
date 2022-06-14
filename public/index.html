@@ -10,8 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/balloons.css">
+    <link rel="stylesheet" href="./css/header.css">
     <script src="https://kit.fontawesome.com/50dfe35e22.js" crossorigin="anonymous"></script>
-
     <title>Balloons</title>
 </head>
 
@@ -24,9 +25,7 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
             <ul class="nav-menu nav-menu_visible">
-                <li class="nav-menu-item">
-                    <a href="#" class="nav-menu-link nav-link" data-action="Lista(obj2)">Lista</a>
-                </li>
+                
                 <li class="nav-menu-item">
                     <a href="#" class="nav-menu-link nav-link" data-action="Añadir(obj2)">Añadir</a>
                 </li>
@@ -50,19 +49,18 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <!--Seccion A-->
-                    <div class="seccion-a">
-                        <h2 class="title">Participantes</h2>
-                        <label class="name" for="Name"> <span id="spamname">--</span> </label>
-                        <input type="text">
-                        <button class="btn" id="btnAction">Aceptar</button>
-                        <ul class="list-group" id="list">
-                            <li class="list-group-item">
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!--Seccion A-->
+                <div class="seccion-a">
+                    <h2 class="title">Participantes</h2>
+                    <label class="name" for="Name"> <span id="spamname">--</span> </label>
+                    <input type="text" id="Name">
+                    <button class="btn" id="btnAction">Aceptar</button>
 
+<<<<<<< HEAD
                                 <div class="col-xs-12 col-sm-9">
                                     <span class="name">Scott Stevens</span><br />
                                     <!-- <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="7396 E North St"></span> -->
@@ -94,16 +92,45 @@
             </div>
             <div class="reset">
                 <button id="play" class="buttons" aria-current="page">Reset</button>
+=======
+                    <ul class="list-group" id="list">
+                       
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <!--Participante eliminado-->
+                <div class="mx-5 my-4 d-flex  justify-content-center rounded-5 show">
+                    <h1 id="name" class="ps-4"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="red"
+                            class="bi bi-person-x-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6.146-2.854a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z" />
+                        </svg></h1>
+                </div>
+                  <!--Imagen del Circo-->
+                <img src="img/circus.jpeg" class="img-fluid" alt="circus">
+>>>>>>> 11277057f2b7b8e25a44244e526120bed690f3c3
             </div>
         </div>
-    </main>
-    <!--Footer-->
-    <footer class="mx-4 my-2 footer-sass">
+    </div>
+
+<!--Botones-->
+<div class="but">
+<div class="text-center my-4">
+        <button id="play" class=" ms-5 px-5  btn btn-primary active" aria-current="page">Jugar</button>
+    </div>
+    <div class="reset">
+        <button id="reset" class=" ms-5 px-5  btn btn-primary active" aria-current="page">Reset</button>
+    </div>
+</div>
+</main>
+<!--Footer-->
+    <footer class="mx-4 my-2 rounded footer-sass">
         <h3 class="text-center text-dark p-3">&copy;Copyright</h3>
     </footer>
 
 
-    <script src="./js/header.js"></script>
+    <script src="./js/header.js" type="module"></script>
     <script src="./js/app.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
