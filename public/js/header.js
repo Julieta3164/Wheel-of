@@ -33,8 +33,8 @@ function Modificar(obj){
 // select action for each menu item
 navMenuItem.forEach(item => {
     item.addEventListener("click", (obj) => {
-        document.querySelector(".nav-menu-link_active").classList.remove("nav-menu-link_active");
-        obj.target.classList.add("nav-menu-link_active");
+        document.querySelector(".nav-menu-link").classList.remove("nav-menu-link");
+        obj.target.classList.add("nav-menu-link");
         document.querySelector("#spamname").innerHTML = obj.target.innerHTML;
         document.querySelector("#btnAction").replaceWith(document.querySelector("#btnAction").cloneNode(true));
         document.querySelector("#btnAction").addEventListener("click", (obj2) => {
