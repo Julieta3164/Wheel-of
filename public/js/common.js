@@ -2,7 +2,7 @@ function getLocalStorage() {
     //addLocalStore()
     let getList = localStorage.getItem("entry")
     getList = JSON.parse(getList)
-    if(getList[0] == null) {
+    if (getList[0] === null) {
         getList = []
     }
     return getList
@@ -19,7 +19,7 @@ function createListFromLocalStorage() {
     let list = getLocalStorage()
     let ul = document.querySelector("#list")
 
-    ul.innerHTML="";
+    ul.innerHTML = "";
 
     list.forEach(item => {
         let li = document.createElement("li")
