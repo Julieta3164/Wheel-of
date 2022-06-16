@@ -1,5 +1,5 @@
 import { getLocalStorage, addLocalStore, createListFromLocalStorage } from "./common.js";
-import { showElected, addBalloons } from "./show-name.js";
+import { showElected, resetBallons } from "./show-name.js";
 
 
 function app() {
@@ -22,11 +22,11 @@ function app() {
     let btnreset = document.getElementById("reset");
     btnreset.addEventListener('click', () => {
         reset()
+
+
     })
 
-
 }
-
 
 function reset() {
     let ul = document.querySelector("#list");
@@ -40,6 +40,7 @@ function reset() {
     let getList = [];
     localStorage.setItem("entry", JSON.stringify(getList))
     createListFromLocalStorage();
+    resetBallons()
 }
 
 

@@ -10,7 +10,8 @@ function nameRandom() {
     let rand_name = Math.floor(Math.random() * list.length)
     let getName = list[rand_name]
     deleteName(rand_name)
-        //console.log(list)
+
+    //console.log(list)
 
     return getName
 }
@@ -32,12 +33,19 @@ function addBalloons(updatedList) {
     for (let i = 0; i < updatedList.length; i++) {
         ballonsShow.innerHTML += `
         
-        <div class="col-lg-1">
-        <img src="./img/globo.png" alt="globos de participantes width="100px" height="100px"">
+        <div class="col-lg-2">
+        <img src="./img/globo.png" class="img-fluid" alt="globos de participantes width="100%" height="auto"">
         </div>
         ${ i == 4 ? '<div class="col-lg-7"></div>' : ''}
         `
     }
 }
 
-export { showElected, addBalloons };
+function resetBallons() {
+    let ballonsShow = document.getElementById("ballons-show")
+    ballonsShow.innerHTML = ''
+}
+
+
+
+export { showElected, addBalloons, resetBallons };
