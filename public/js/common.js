@@ -21,7 +21,7 @@ function addLocalStore(nombre) {
     localStorage.setItem("entry", JSON.stringify(getList))
 }
 
-function createListFromLocalStorage() {
+function createListFromLocalStorage(editar="none", eliminar="none") {
     let list = getLocalStorage()
     let ul = document.querySelector("#list")
 
@@ -42,7 +42,7 @@ function createListFromLocalStorage() {
         spanmod.classList.add("fa-solid")
         spanmod.classList.add("fa-pencil")
         spanmod.dataset.name=item
-        spanmod.style.display="none"
+        spanmod.style.display=editar
 
         spanmod.addEventListener('click', (elm) => {
             //implement this
@@ -53,11 +53,13 @@ function createListFromLocalStorage() {
         spandel.classList.add("fa-solid")
         spandel.classList.add("fa-trash-can")
         spandel.dataset.name=item
-        spandel.style.display="none"
+        spandel.style.display=eliminar
 
         spandel.addEventListener('click', (elm) => {
-            deleteName(elm.path[0].dataset.name)
-            elm.path[2].remove()
+            console.log(elm)
+            deleteName(elm.originalTarget.dataset.name)
+            createListFromLocalStorage("none", "")
+            /*elm.originalTarget[2].remove()*/
         })
 
         div.appendChild(span)
