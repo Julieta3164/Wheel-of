@@ -116,6 +116,7 @@
   body {
     padding-top: 25px;
   }
+
   .header {
     background-color: #358E9D;
     height: 8%;
@@ -125,6 +126,7 @@
   .header img {
     width: 10%;
   }
+
   .nav-menu {
     flex-direction: column;
     align-items: center;
@@ -138,20 +140,25 @@
     left: 100%;
     transition: left 0.3s;
   }
+
   .nav-menu-item {
     line-height: 70px;
   }
+
   .nav-menu-link:hover,
 .nav-menu-link_active {
     background: none;
     color: rgb(246, 244, 244);
   }
+
   .nav-toggle {
     display: block;
   }
+
   .nav-menu_visible {
     left: 12%;
   }
+
   .help {
     transition: 0.4s easi-in-out-all;
     position: absolute;
@@ -301,12 +308,6 @@ main {
 .but .reset {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-#ballons-show {
-  position: absolute;
-  bottom: -19%;
-  left: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

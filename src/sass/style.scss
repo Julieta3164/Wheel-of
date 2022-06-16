@@ -39,12 +39,11 @@ main {
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
-    .buttons {
+    .active {
         color: #fafafa;
         width: 150%;
         background: #358E9D;
         border: solid 3px #358E9D;
-        padding: 10px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
