@@ -1,7 +1,7 @@
 import { addBalloons } from "./show-name.js";
 
 function getLocalStorage() {
-    //addLocalStore()
+    // addLocalStore('')
     let getList = localStorage.getItem("entry")
     getList = JSON.parse(getList)
     if (getList[0] === null) {
@@ -19,7 +19,7 @@ function deleteName(rand_name) {
 
 // helper for develop data in localStorage initially
 function addLocalStore(nombre) {
-    let getList = getLocalStorage()
+    let getList = getLocalStorage();
     getList.indexOf(nombre) == -1 ? getList.push(nombre) : null
     localStorage.setItem("entry", JSON.stringify(getList))
 }

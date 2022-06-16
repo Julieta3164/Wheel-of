@@ -1,5 +1,5 @@
 import { getLocalStorage, addLocalStore, createListFromLocalStorage } from "./common.js";
-import { showElected, resetBallons } from "./show-name.js";
+import { showElected, resetBallons, addBalloons } from "./show-name.js";
 
 
 function app() {
@@ -16,6 +16,7 @@ function app() {
         if (name != "") {
             addLocalStore(name);
             createListFromLocalStorage();
+            addBalloons(getLocalStorage())
             document.getElementById("Name").value = "";
         }
     })

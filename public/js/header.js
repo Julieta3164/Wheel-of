@@ -11,8 +11,7 @@ navToggle.addEventListener("click", () => {
 });
 
 
-function Lista()
-{
+function Lista() {
     document.getElementById("Name").value.trim() != "" ? addLocalStore(document.getElementById("Name").value.trim()) : null;
     createListFromLocalStorage();
 }
@@ -35,28 +34,27 @@ function Lista()
 // select action for each menu item
 navMenuItem.forEach(item => {
     item.addEventListener("click", (obj) => {
-        try{
+        try {
             document.querySelector(".nav-menu-link_active").classList.remove("nav-menu-link_active");
-        }
-       catch{} 
-       obj.target.classList.add("nav-menu-link_active");
+        } catch {}
+        obj.target.classList.add("nav-menu-link_active");
         document.querySelector("#spamname").innerHTML = obj.target.innerHTML;
         //document.querySelector("#btnAction").replaceWith(document.querySelector("#btnAction").cloneNode(true));
 
         switch (document.querySelector("#spamname").innerHTML) {
             case "Borrar":
-                document.querySelectorAll(".fa-pencil").forEach((elm) => { elm.style.display="none" ; })
-                document.querySelectorAll(".fa-trash-can").forEach((elm) => { elm.style.display="" ; })
+                document.querySelectorAll(".fa-pencil").forEach((elm) => { elm.style.display = "none"; })
+                document.querySelectorAll(".fa-trash-can").forEach((elm) => { elm.style.display = ""; })
                 break;
             case "Modificar":
-                document.querySelectorAll(".fa-pencil").forEach((elm) => { elm.style.display="" ; })
-                document.querySelectorAll(".fa-trash-can").forEach((elm) => { elm.style.display="none" ; })
+                document.querySelectorAll(".fa-pencil").forEach((elm) => { elm.style.display = ""; })
+                document.querySelectorAll(".fa-trash-can").forEach((elm) => { elm.style.display = "none"; })
                 break;
             case "Añadir":
-                document.querySelectorAll(".fa-pencil").forEach((elm) => { elm.style.display="none" ; })
-                document.querySelectorAll(".fa-trash-can").forEach((elm) => { elm.style.display="none" ; })
+                document.querySelectorAll(".fa-pencil").forEach((elm) => { elm.style.display = "none"; })
+                document.querySelectorAll(".fa-trash-can").forEach((elm) => { elm.style.display = "none"; })
                 break;
-        
+
             default:
                 break;
         }
@@ -66,4 +64,3 @@ navMenuItem.forEach(item => {
         // });
     })
 })
-
