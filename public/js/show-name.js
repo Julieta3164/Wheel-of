@@ -1,10 +1,6 @@
-import { getLocalStorage, createListFromLocalStorage } from "./common.js";
+import { getLocalStorage, createListFromLocalStorage, deleteName } from "./common.js";
 
 let list = []
-function deleteName(rand_name) {
-    let removed = list.splice(rand_name, 1);
-    localStorage.setItem("entry", JSON.stringify(list))
-}
 
 function nameRandom() {
     if (list.length == 0) {

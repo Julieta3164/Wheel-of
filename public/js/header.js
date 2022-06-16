@@ -41,7 +41,26 @@ navMenuItem.forEach(item => {
        catch{} 
        obj.target.classList.add("nav-menu-link_active");
         document.querySelector("#spamname").innerHTML = obj.target.innerHTML;
-        // document.querySelector("#btnAction").replaceWith(document.querySelector("#btnAction").cloneNode(true));
+        //document.querySelector("#btnAction").replaceWith(document.querySelector("#btnAction").cloneNode(true));
+
+        switch (document.querySelector("#spamname").innerHTML) {
+            case "Borrar":
+                document.querySelectorAll(".fa-pencil").forEach((elm) => { elm.style.display="none" ; })
+                document.querySelectorAll(".fa-trash-can").forEach((elm) => { elm.style.display="" ; })
+                break;
+            case "Modificar":
+                document.querySelectorAll(".fa-pencil").forEach((elm) => { elm.style.display="" ; })
+                document.querySelectorAll(".fa-trash-can").forEach((elm) => { elm.style.display="none" ; })
+                break;
+            case "Añadir":
+                document.querySelectorAll(".fa-pencil").forEach((elm) => { elm.style.display="none" ; })
+                document.querySelectorAll(".fa-trash-can").forEach((elm) => { elm.style.display="none" ; })
+                break;
+        
+            default:
+                break;
+        }
+
         // document.querySelector("#btnAction").addEventListener("click", (obj2) => {
         //    eval(obj.target.dataset.action);
         // });

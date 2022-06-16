@@ -8,6 +8,12 @@ function getLocalStorage() {
     return getList
 }
 
+function deleteName(rand_name) {
+    let list = getLocalStorage();
+    let removed = list.splice(rand_name, 1);
+    localStorage.setItem("entry", JSON.stringify(list))
+}
+
 // helper for develop data in localStorage initially
 function addLocalStore(nombre) {
     let getList = getLocalStorage()
@@ -30,7 +36,33 @@ function createListFromLocalStorage() {
 
         let span = document.createElement("span")
         span.innerHTML = item
+
+        //botones
+        let spanmod = document.createElement("span")
+        spanmod.classList.add("fa-solid")
+        spanmod.classList.add("fa-pencil")
+        spanmod.dataset.name=item
+        spanmod.style.display="none"
+
+        spanmod.addEventListener('click', (elm) => {
+            //implement this
+            console.log(elm.path[1])
+        })
+
+        let spandel = document.createElement("span")
+        spandel.classList.add("fa-solid")
+        spandel.classList.add("fa-trash-can")
+        spandel.dataset.name=item
+        spandel.style.display="none"
+
+        spandel.addEventListener('click', (elm) => {
+            deleteName(elm.path[0].dataset.name)
+            elm.path[2].remove()
+        })
+
         div.appendChild(span)
+        div.appendChild(spanmod)
+        div.appendChild(spandel)
         let div2 = document.createElement("div")
         div2.classList.add("clearfix")
         li.appendChild(div)
@@ -43,4 +75,4 @@ function createListFromLocalStorage() {
 
 
 
-export { getLocalStorage, addLocalStore, createListFromLocalStorage };
+export { getLocalStorage, addLocalStore, createListFromLocalStorage, deleteName };
