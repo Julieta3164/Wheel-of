@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,8 +33,7 @@
                     <a href="#" class="nav-menu-link nav-link">Borrar</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#" class="nav-menu-link nav-link nav-menu-link"
-                        data-action="Modificar(obj2)">Modificar</a>
+                    <a href="#" class="nav-menu-link nav-link nav-menu-link" data-action="Modificar(obj2)">Modificar</a>
                 </li>
 
                 <button class="help">
@@ -60,9 +60,9 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col seccion-a">
                     <!--Seccion A-->
-                    <div class="seccion-a">
+                    <div class="">
                         <h2 class="title">Participantes</h2>
                         <label class="name" for="Name"> <span id="spamname">--</span> </label>
                         <input type="text">
@@ -79,23 +79,29 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-lg-7">
                     <!--Participante eliminado-->
                     <div class="mx-5 my-4 d-flex  justify-content-center rounded-5 show">
-                        <h1 id="name" class="ps-4"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="54"
-                                fill="red" class="bi bi-person-x-fill" viewBox="0 0 16 16">
+                        <h1 id="name" class="ps-4"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="red" class="bi bi-person-x-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6.146-2.854a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z" />
                             </svg></h1>
                     </div>
                     <!--Imagen del Circo-->
+                    <div class="col-lg-4">
+
+                        <div class="row" id="ballons-show">
+                            <div class="col-lg-2">
+                            </div>
+                        </div>
+                    </div>
                     <img src="img/circus.jpeg" class="img-fluid" alt="circus">
                 </div>
             </div>
         </div>
         <!--Botones-->
         <div class="but">
-            <div class="reset" >
+            <div class="reset">
                 <button id="play" class="buttons" aria-current="page">Jugar</button>
             </div>
             <div class="reset">

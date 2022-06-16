@@ -3,19 +3,17 @@
 @import 'balloons';
 @import 'header';
 @import 'rules';
-
 body {
     font-family: 'Lobster', cursive;
     margin: 5%;
 }
 
-main{
-margin:17%;
+main {
+    margin: 17%;
 }
 
 .seccion-a {
     text-align: center;
-
     input {
         border: solid 3px #358E9D;
         border-top-left-radius: 20px;
@@ -23,13 +21,11 @@ margin:17%;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
     }
-
     .btn {
         color: #fafafa;
         background: #358E9D;
         margin: 1%;
     }
-
     .list {
         border: solid 3px #358E9D;
         border-top-left-radius: 20px;
@@ -39,14 +35,11 @@ margin:17%;
     }
 }
 
-
-.but{
+.but {
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
-    
-    
-    .buttons{
+    .buttons {
         color: #fafafa;
         width: 150%;
         background: #358E9D;
@@ -57,10 +50,14 @@ margin:17%;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
     }
-   
-    .reset{
-        
+    .reset {
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
     }
+}
+
+#ballons-show {
+    position: absolute;
+    bottom: -19%;
+    left: 50%;
 }
