@@ -2,20 +2,24 @@ function getLocalStorage() {
     //addLocalStore()
     let getList = localStorage.getItem("entry")
     getList = JSON.parse(getList)
+    if (getList[0] === null) {
+        getList = []
+    }
     return getList
 }
 
 // helper for develop data in localStorage initially
-function addLocalStore() {
-    let name = ["Esther", "Miguel", "Ysabel", "Lucero", "Iria", "Juliet", "Marybell", "Carmen", "Alicia", "Pelayo"];
-    localStorage.setItem("entry", JSON.stringify(name))
+function addLocalStore(nombre) {
+    let getList = getLocalStorage()
+    getList.indexOf(nombre) == -1 ? getList.push(nombre) : null
+    localStorage.setItem("entry", JSON.stringify(getList))
 }
 
 function createListFromLocalStorage() {
     let list = getLocalStorage()
     let ul = document.querySelector("#list")
 
-    ul.innerHTML="";
+    ul.innerHTML = "";
 
     list.forEach(item => {
         let li = document.createElement("li")
