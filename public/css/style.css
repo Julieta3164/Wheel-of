@@ -251,6 +251,91 @@ header .title {
   margin: 1.5em;
 }
 
+@media (max-width: 768px) {
+  body {
+    font-family: "Lobster", cursive;
+    margin: 5%;
+  }
+  header {
+    padding: 1%;
+    background: #358E9D;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  header .title {
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+  }
+  .instruciones {
+    width: 90%;
+    margin: 4%;
+    padding: 1%;
+    border: solid 3px #358E9D;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .instruciones .une {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .recomendaciones {
+    width: 90%;
+    margin: 4%;
+    padding: 1%;
+    border: solid 3px #358E9D;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .recomendaciones .two {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .volver {
+    text-align: center;
+    margin: 2%;
+  }
+  .volver .btns {
+    width: 25%;
+    color: #fafafa;
+    font-family: "Lobster", cursive;
+    font-size: 10px;
+    background: #358E9D;
+    border: solid 3px #358E9D;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+  }
+  .footer-2 {
+    padding: 1%;
+    border: solid 3px #358E9D;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .footer-2 h2 {
+    text-align: center;
+  }
+  .globo {
+    max-width: 25px;
+    max-height: 25px;
+    margin: 1.5em;
+  }
+}
 body {
   font-family: "Lobster", cursive;
   margin: 5%;
@@ -299,6 +384,7 @@ main {
   border-bottom-left-radius: 10px;
 }
 .but .reset {
+  margin-right: 50%;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
