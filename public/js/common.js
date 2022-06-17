@@ -4,9 +4,11 @@ function getLocalStorage() {
     // addLocalStore('')
     let getList = localStorage.getItem("entry")
     getList = JSON.parse(getList)
+    
     if (getList[0] === null) {
         getList = []
     }
+    addBalloons(getList)
     return getList
 }
 
